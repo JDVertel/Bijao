@@ -1,2 +1,8 @@
 Desarrollado por juan David Vertel 
 Tecnoparque nodo socorro 2023
+
+crear un archivo llamado .env y colocar las siguiente estructura 
+HOST=localhost
+DATABASE=apirest
+USER=root
+PASSWORD=mysql
