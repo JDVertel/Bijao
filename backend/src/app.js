@@ -14,6 +14,7 @@ app.set("port", 4000);
 
 // middleware para usar morgan en medio 
 app.use(morgan("dev"));
+app.use(express.json());
 
 
 // Routes
