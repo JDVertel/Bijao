@@ -75,7 +75,7 @@ const DeleteUser = async (req, res) => {
 /* ----------------------------------------- */
 const UpdateUser = async (req, res) => {
   try {
-    const {id}=req.params;
+    const { id } = req.params;
     const { nombre, documento, pass, id_rol, estado, email } = req.body;
 
 /* **************inicio control de campos vacios************************ */
@@ -92,7 +92,7 @@ const UpdateUser = async (req, res) => {
     }
     /* **************fin control de campos vacios************************ */
 
-    const usuario ={ id,nombre, documento, pass, id_rol, estado, email }
+    const usuario ={ id, nombre, documento, pass, id_rol, estado, email }
     const connection = await getConnection();
     const result = await connection.query(
       "UPDATE usuarios SET ? WHERE documento = ?",
