@@ -13,7 +13,7 @@ const GetUsers = async (req, res) => {
 
 /* ----------------------------------------- */
 
-const AddUsers = async (req, res) => {
+const AddUser = async (req, res) => {
   try {
     const { nombre, documento, pass, id_rol, estado, email } = req.body;
 
@@ -41,6 +41,11 @@ const AddUsers = async (req, res) => {
     res.send(error.message);
   }
 };
+
+
+
+
+
 /* ----------------------------------------- */
 const GetUser = async (req, res) => {
   try {
@@ -57,6 +62,10 @@ const GetUser = async (req, res) => {
   }
 };
 
+
+
+
+
 /* ----------------------------------------- */
 const DeleteUser = async (req, res) => {
   try {
@@ -72,31 +81,37 @@ const DeleteUser = async (req, res) => {
     res.send(error.message);
   }
 };
+
+
+
+
+
+
 /* ----------------------------------------- */
 const UpdateUser = async (req, res) => {
   try {
     const { id } = req.params;
-    const { nombre, documento, pass, id_rol, estado, email } = req.body;
+    const { nombre, documento, passw, id_rol, estado, email } = req.body;
 
 /* **************inicio control de campos vacios************************ */
     if (
       id===undefined ||
       nombre === undefined ||
       documento === undefined ||
-      pass === undefined ||
+      passw === undefined ||
       email === undefined
     ) {
       res.status(400).json({
-        message: "Bad request. Los datos incompletos.",
+        message: "Bad request. Los datos incompletos. desde el put"
       });
     }
     /* **************fin control de campos vacios************************ */
 
-    const usuario ={ id, nombre, documento, pass, id_rol, estado, email }
+    const upd_usuario ={ nombre, documento, passw, id_rol, estado, email };
     const connection = await getConnection();
     const result = await connection.query(
-      "UPDATE usuarios SET ? WHERE documento = ?",
-      [usuario , id]
+      "UPDATE usuarios SET ? WHERE id = ?",
+      [upd_usuario , id]
     );
     res.json(result);
   } catch (error) {
@@ -110,9 +125,10 @@ const UpdateUser = async (req, res) => {
 export const methods = {
   GetUsers,
   GetUser,
-  AddUsers,
+  AddUser,
+  UpdateUser,
   DeleteUser,
-  UpdateUser
+ 
 };
 
 /* 

@@ -4,7 +4,7 @@ const myrouter= Router();
 
 
 myrouter.get("/", userAppController.GetUsers);
-myrouter.post("/", userAppController.AddUsers);
+myrouter.post("/", userAppController.AddUser);
 myrouter.get("/:id", userAppController.GetUser);
 myrouter.delete("/:id", userAppController.DeleteUser);
 myrouter.put("/:id", userAppController.UpdateUser);
