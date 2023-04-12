@@ -15,14 +15,14 @@ const GetUsers = async (req, res) => {
 
 const AddUser = async (req, res) => {
   try {
-    const { nombre, documento, pass, id_rol, estado, email } = req.body;
+    const { nombre, documento, passw, id_rol, estado, email } = req.body;
 
 
 /* **************inicio control de campos vacios************************ */
     if (
       nombre === undefined ||
       documento === undefined ||
-      pass === undefined ||
+      passw === undefined ||
       email === undefined
     ) {
       res.status(400).json({
@@ -32,7 +32,7 @@ const AddUser = async (req, res) => {
     
 /* *****************fin control de campos vacios************************* */
 
-    const user = { nombre, documento, pass, id_rol, estado, email };
+    const user = { nombre, documento, passw, id_rol, estado, email };
     const connection = await getConnection();
     const result = await connection.query("INSERT INTO usuarios SET ?", user);
     res.json({ message: "usuario adicionado exitosamente!" });
