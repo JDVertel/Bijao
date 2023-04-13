@@ -4,8 +4,8 @@ import morgan from "morgan";
 
 // importar routes
 
-import AppsRoutes from "./routes/app.routes";
-
+import userRoutes from "./routes/user.routes";
+import appRoutes from "./routes/app.routes"
 const app = express();
 
 // Configuraciones
@@ -18,7 +18,9 @@ app.use(express.json());
 
 
 // Routes
-app.use("/api/aplication",AppsRoutes);
+app.use("/api/aplication",appRoutes);
+app.use("/api/aplication",userRoutes);
+
 
 
 export default app;

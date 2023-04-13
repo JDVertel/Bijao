@@ -1,12 +1,15 @@
 import { Router } from "express";
-import { methods as userAppController} from "../controllers/app.controller";
-const myrouter= Router();
+import { app_methods} from "../controllers/app.controllers";
+
+const myapprouter= Router();
 
 
-myrouter.get("/", userAppController.GetUsers);
-myrouter.post("/", userAppController.AddUser);
-myrouter.get("/:id", userAppController.GetUser);
-myrouter.delete("/:id", userAppController.DeleteUser);
-myrouter.put("/:id", userAppController.UpdateUser);
+myapprouter.get("/app", app_methods.Getproductos);
 
-export default myrouter;
+
+/* myapprouter.post("/", app_methods.AddUser);
+myapprouter.get("/:id", app_methods.GetUser);
+myapprouter.delete("/:id", app_methods.DeleteUser);
+myapprouter.put("/:id", app_methods.UpdateUser); */
+
+export default myapprouter;

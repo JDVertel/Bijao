@@ -1,4 +1,4 @@
-import { getConnection } from "./../database/database";
+import { getConnection } from "../database/database";
 
 const GetUsers = async (req, res) => {
   try {
@@ -17,8 +17,7 @@ const AddUser = async (req, res) => {
   try {
     const { nombre, documento, passw, id_rol, estado, email } = req.body;
 
-
-/* **************inicio control de campos vacios************************ */
+    /* **************inicio control de campos vacios************************ */
     if (
       nombre === undefined ||
       documento === undefined ||
@@ -29,8 +28,8 @@ const AddUser = async (req, res) => {
         message: "Bad request. Los datos incompletos.",
       });
     }
-    
-/* *****************fin control de campos vacios************************* */
+
+    /* *****************fin control de campos vacios************************* */
 
     const user = { nombre, documento, passw, id_rol, estado, email };
     const connection = await getConnection();
@@ -41,10 +40,6 @@ const AddUser = async (req, res) => {
     res.send(error.message);
   }
 };
-
-
-
-
 
 /* ----------------------------------------- */
 const GetUser = async (req, res) => {
@@ -62,10 +57,6 @@ const GetUser = async (req, res) => {
   }
 };
 
-
-
-
-
 /* ----------------------------------------- */
 const DeleteUser = async (req, res) => {
   try {
@@ -82,36 +73,31 @@ const DeleteUser = async (req, res) => {
   }
 };
 
-
-
-
-
-
 /* ----------------------------------------- */
 const UpdateUser = async (req, res) => {
   try {
     const { id } = req.params;
     const { nombre, documento, passw, id_rol, estado, email } = req.body;
 
-/* **************inicio control de campos vacios************************ */
+    /* **************inicio control de campos vacios************************ */
     if (
-      id===undefined ||
+      id === undefined ||
       nombre === undefined ||
       documento === undefined ||
       passw === undefined ||
       email === undefined
     ) {
       res.status(400).json({
-        message: "Bad request. Los datos incompletos. desde el put"
+        message: "Bad request. Los datos incompletos. desde el put",
       });
     }
     /* **************fin control de campos vacios************************ */
 
-    const upd_usuario ={ nombre, documento, passw, id_rol, estado, email };
+    const upd_usuario = { nombre, documento, passw, id_rol, estado, email };
     const connection = await getConnection();
     const result = await connection.query(
       "UPDATE usuarios SET ? WHERE id = ?",
-      [upd_usuario , id]
+      [upd_usuario, id]
     );
     res.json(result);
   } catch (error) {
@@ -120,28 +106,11 @@ const UpdateUser = async (req, res) => {
   }
 };
 
-
 /* ----------------------------------------- */
-export const methods = {
+export const user_methods = {
   GetUsers,
   GetUser,
   AddUser,
   UpdateUser,
   DeleteUser,
- 
 };
-
-/* 
-const addUsers = async (req,res)=>{
-
-    try {
-        const connection= await getConnection();
-     
-        
-    } catch (error) {
-        res.status(500);
-        res.send(error.message);
-        
-    }
-
-}; */
