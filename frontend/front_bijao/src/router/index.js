@@ -38,21 +38,13 @@ const router = createRouter({
       name: 'about',
       component: about
     },
-    {
-      path: '/ordenes',
-      name: 'ordenes',
-      component: ordenes
-    },
-    {
-      path: '/g_ordenes',
-      name: 'g_ordenes',
-      component: g_ordenes
-    },
+
     {
       path: '/g_pedidos',
       name: 'g_pedidos',
       component: g_pedidos
     },
+  
     {
       path: '/g_envios',
       name: 'g_envios',
