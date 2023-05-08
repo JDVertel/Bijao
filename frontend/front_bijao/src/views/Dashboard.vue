@@ -2,9 +2,9 @@
   <div>
     <h4>dashboard</h4>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary app">
       <div class="container-fluid">
-        <a class="navbar-brand" >
+        <a class="navbar-brand">
           <img
             src="@/assets/logo.svg"
             alt="Logo"
@@ -32,7 +32,6 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -40,17 +39,24 @@
                 Gestor
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item"> <RouterLink to="/G_pedidos">Pedidos</RouterLink></a></li>
+                <li>
+                  <a class="dropdown-item app">
+                    <RouterLink to="/pedidos">Pedidos</RouterLink></a
+                  >
+                </li>
 
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item"><RouterLink to="/G_envios">Envios</RouterLink></a></li>
+                <li>
+                  <a class="dropdown-item app"
+                    ><RouterLink to="/informes">Informes</RouterLink></a
+                  >
+                </li>
               </ul>
             </li>
 
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -58,16 +64,15 @@
                 Tamalero
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" >Home</a></li>
+                <li><a class="dropdown-item app">Home</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" >Informes</a></li>
+                <li><a class="dropdown-item app">Informes</a></li>
               </ul>
             </li>
 
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -75,17 +80,16 @@
                 Administrador
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" >Eventos</a></li>
-                <li><a class="dropdown-item" >Tamaler@s</a></li>
-                <li><a class="dropdown-item" >Informes</a></li>
+                <li><a class="dropdown-item app">Eventos</a></li>
+                <li><a class="dropdown-item app">Tamaler@s</a></li>
+                <li><a class="dropdown-item app">Informes</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" >Parametros</a></li>
+                <li><a class="dropdown-item app">Parametros</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -93,15 +97,13 @@
                 Gestion de Contenido
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" >Inicio</a></li>
-                <li><a class="dropdown-item" >Quienes somos</a></li>
-                <li><a class="dropdown-item" >Nuestro Equipo</a></li>
+                <li><a class="dropdown-item app">Inicio</a></li>
+                <li><a class="dropdown-item app">Quienes somos</a></li>
+                <li><a class="dropdown-item app">Nuestro Equipo</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" 
-                >Cerrar sesion</a
-              >
+              <a class="nav-link active" aria-current="page">Cerrar sesion</a>
             </li>
           </ul>
         </div>

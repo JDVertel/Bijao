@@ -54,8 +54,8 @@
               <table class="table table-sm table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Fecha</th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
                   </tr>
                 </thead>
                 <tbody>

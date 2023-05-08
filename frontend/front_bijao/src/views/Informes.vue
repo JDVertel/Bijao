@@ -1,5 +1,5 @@
 <template>
-  <h5>Gestion de envios</h5>
+  <h5>informes</h5>
 </template>
 
 <script>

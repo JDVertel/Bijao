@@ -66,13 +66,19 @@
           </tr>
         </tbody>
       </table>
-      <h6>Total de pedido: $45000</h6>
+      <div class="row">
+        <div class="col-7"> <h6>Total de pedido: $45000 </h6> </div>
+        <div class="col-5" style="color:red
+        "><small> <strong>*No incluye costos de envio</strong></small></div>
+       
+      </div>
+     
 
       <hr />
       <h6>Datos para realizar envio</h6>
 
       <p>
-        Nota: su pedido será confirmado por una de nuestros encargados vía
+        Nota: su pedido será confirmado por uno de nuestros encargados vía
         telefónica y deberá ser cancelado al momento de recibirlo
       </p>
       <div class="form">
