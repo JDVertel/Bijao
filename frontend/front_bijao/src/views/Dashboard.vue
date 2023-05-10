@@ -64,9 +64,13 @@
                 Tamalero
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item app">Home</a></li>
+                <li><a class="dropdown-item app"><RouterLink to="/tamalero">Home</RouterLink></a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item app">Informes</a></li>
+                  <li>
+                  <a class="dropdown-item app"
+                    ><RouterLink to="/informes">Informes</RouterLink></a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -80,12 +84,14 @@
                 Administrador
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item app">Eventos</a></li>
-                <li><a class="dropdown-item app">Tamaler@s</a></li>
-                <li><a class="dropdown-item app">Informes</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item app">Parametros</a></li>
-              </ul>
+                <li><a class="dropdown-item app"><RouterLink to="/parametros">Parametros</RouterLink></a></li>
+                 <li><hr class="dropdown-divider" /></li>
+                  <li>
+                  <a class="dropdown-item app"
+                    ><RouterLink to="/informes">Informes</RouterLink></a
+                  >
+                </li>
+                 </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -97,9 +103,7 @@
                 Gestion de Contenido
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item app">Inicio</a></li>
-                <li><a class="dropdown-item app">Quienes somos</a></li>
-                <li><a class="dropdown-item app">Nuestro Equipo</a></li>
+                <li><a class="dropdown-item app"><RouterLink to="/contenidos">Editar</RouterLink></a></li>
               </ul>
             </li>
             <li class="nav-item">

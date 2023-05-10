@@ -4,9 +4,11 @@ import login from "../views/Login.vue";
 import dashboard from "../views/Dashboard.vue";
 import about from "../views/About.vue";
 import ordenes from "../views/Ordenes.vue";
-
-import pedidos from "../views/pedidos.vue";
-import informes from "../views/informes.vue";
+import pedidos from "../views/Pedidos.vue";
+import informes from "../views/Informes.vue";
+import contenidos from "../views/Contenido.vue";
+import parametros from "../views/Parametros.vue";
+import tamalero from "../views/TamaleroHome.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +54,22 @@ const router = createRouter({
       path: "/informes",
       name: "informes",
       component: informes,
+    },
+    {
+      path: "/contenidos",
+      name: "contenidos",
+      component: contenidos,
+    },
+    {
+      path: "/parametros",
+      name: "parametros",
+      component: parametros,
+    },
+  
+    {
+      path: "/tamalero",
+      name: "tamalero",
+      component: tamalero,
     },
   ],
 });

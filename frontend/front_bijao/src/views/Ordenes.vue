@@ -12,7 +12,7 @@
             <th style="width: 20%;">Valor</th>
             <th style="width: 20%;">Disp</th>
             <th style="width: 20%;">Compra</th>
-            <th style="width: 20%;">Subtotal</th>
+          
           </tr>
         </thead>
         <tbody class="text-center">
@@ -29,7 +29,7 @@
                   aria-describedby="inputGroup-sizing-sm"
                 />
               </div>
-              <td>12</td>
+            
             </td>
           </tr>
           <tr>
@@ -46,7 +46,7 @@
                 />
               </div>
             </td>
-            <td>12</td>
+      
           </tr>
           <tr>
             <td>Tamal de pescado</td>
@@ -62,7 +62,7 @@
                 />
               </div>
             </td>
-              <td>12</td>
+            
           </tr>
         </tbody>
       </table>
