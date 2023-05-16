@@ -3,6 +3,6 @@ Tecnoparque nodo socorro 2023
 
 crear un archivo llamado .env y colocar las siguiente estructura 
 HOST=localhost
-DATABASE=apirest
+DATABASE=api_bijao
 USER=root
-PASSWORD=mysql
+PASSWORD=
