@@ -49,57 +49,65 @@
           aria-controls="nav-profile"
           aria-selected="false"
         >
-          Aprovicionar
+          Aprovisionar
         </button>
       </div>
     </nav>
+
+    
     <div class="tab-content" id="nav-tabContent">
       <div
-        class="tab-pane fade show active"
+      class="tab-pane fade show active"
+      id="nav-contact"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <p>
+        informacion del estado de cuentas actual vendidos , base disponible ,
+        ganancia etc
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Vendidos</th>
+            <th>Disp</th>
+            <th>SubT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tamal de carne</td>
+            <th>15</th>
+            <td>3</td>
+         <th>150000</th>
+          </tr>
+          <tr>
+            <td>tamal de pollo</td>
+            <th>2</th>
+            <td>10</td>
+            <th>150000</th>
+          </tr>
+          <tr>
+            <td>tamal mmixto</td>
+            <th>4</th>
+            <td>1</td>
+            <th>150000</th>
+          </tr>
+        </tbody>
+      </table>
+      <h6>Total Venta $400.000</h6>
+      <hr>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------- -->
+      <div
+        class="tab-pane fade "
         id="nav-home"
         role="tabpanel"
         aria-labelledby="nav-home-tab"
       >
-       <p>Vender</p> 
-       <br>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Vendidos</th>
-              <th>Disp</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>tamal de carne</td>
-              <th>15</th>
-              <td>3</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>tamal de pollo</td>
-              <th>2</th>
-              <td>10</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>tamal mmixto</td>
-              <th>4</th>
-              <td>1</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-profile"
-        role="tabpanel"
-        aria-labelledby="nav-profile-tab"
-      >
-      <p>aprovisionar</p>  
-      
+        <p>Vender</p>
         <br />
         <div class="row">
           <div class="col-6">
@@ -113,10 +121,83 @@
               <option value="3">Tamal mixto</option>
             </select>
           </div>
-          <div class="col-4">campo</div>
-          <div class="col-2">boton</div>
+          <div class="col-4">
+            <input class="form-control form-control-sm" type="number">
+            </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-primary btn-sm">+</button>
+
+          </div>
         </div>
-<br>
+      <br>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+              <th>Opc</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tamal de carne</td>
+              <td>15</td>
+              <td>15</td>
+              <td><button type="button" class="btn btn-danger btn-sm">x</button></td>
+            </tr>
+            <tr>
+              <td>tamal de pollo</td>
+              <td>2</td>
+              <td>15</td>
+              <td><button type="button" class="btn btn-danger btn-sm">x</button></td>
+            </tr>
+            <tr>
+              <td>tamal mmixto</td>
+              <td>4</td>
+              <td>1</td>
+              <td><button type="button" class="btn btn-danger btn-sm">x</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>Total $ 150000</h6>
+        <hr>
+        <button type="button" class="btn btn-secondary btn-sm">Finalizar venta</button>
+      </div>
+
+
+      <!-- ------------------------------------------------------------------------ -->
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <p>aprovisionar</p>
+
+        <br />
+        <div class="row">
+          <div class="col-6">
+            <select
+              class="form-select form-select-sm"
+              aria-label="Default select example"
+            >
+              <option selected>Seleccione el producto</option>
+              <option value="1">tamal de carne</option>
+              <option value="2">Tamal de pollo</option>
+              <option value="3">Tamal mixto</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <input class="form-control form-control-sm" type="number">
+            </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-primary btn-sm">+</button>
+
+          </div>
+        </div>
+        <br />
         <table class="table">
           <thead>
             <tr>
@@ -147,55 +228,16 @@
           </tbody>
         </table>
 
-        boton
+        <hr>
+        <button type="button" class="btn btn-secondary btn-sm">Finalizar Proceso</button>
       </div>
-      <div
-        class="tab-pane fade"
-        id="nav-contact"
-        role="tabpanel"
-        aria-labelledby="nav-contact-tab"
-      >
-        <p>
-          informacion del estado de cuentas actual vendidos , base disponible ,
-          ganancia etc
-        </p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Vendidos</th>
-              <th>Disp</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>tamal de carne</td>
-              <th>15</th>
-              <td>3</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>tamal de pollo</td>
-              <th>2</th>
-              <td>10</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>tamal mmixto</td>
-              <th>4</th>
-              <td>1</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+
 </script>
 
-<style>
-</style>
+<style></style>

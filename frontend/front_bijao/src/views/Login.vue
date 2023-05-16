@@ -17,7 +17,7 @@
             class="form-control"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm"
-            placeholder="Usuario"
+            placeholder="Numero de Documento"
           />
         </div>
         <div class="input-group input-group-sm mb-1">

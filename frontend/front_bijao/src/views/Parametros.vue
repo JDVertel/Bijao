@@ -8,20 +8,70 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+   <div class="container">
+    <p> <small>Crear nuevo producto tamal</small> </p>
+    <form action="" class="row">
+      <div class="col-6">
+        <input type="text" class="form-control form-control-sm" id="producInput" placeholder="Nombre">
+      </div>
+      <div class="col-4">
+        <input type="number" class="form-control form-control-sm" id="precioInput" placeholder="Precio">
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-primary btn-sm">Crear</button>
+      </div>
+    </form>
+   </div>
+
+
+
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       Tamaleros
+     Usuarios
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+   
+        <div class="container">
+          <p> <small>Crear nuevo usuario</small> </p>
+          <form action="" class="row">
+            <div class="col-6">
+              <input type="text" class="form-control form-control-sm" id="nameInput" placeholder="Nombres">
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control form-control-sm" id="ApellInput" placeholder="Apellidos">
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control form-control-sm" id="DocInput" placeholder="Documento">
+            </div>
+            <div class="col-4">
+              <input type="number" class="form-control form-control-sm" id="celInput" placeholder="Celular">
+            </div>
+            <div class="col-4">
+              <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected>Rol</option>
+                <option value="1">Gestor</option>
+                <option value="2">Tamalero</option>
+                <option value="3">Administrador</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <input type="password" class="form-control form-control-sm" id="passw1Input" placeholder="Password">
+            </div>
+            <div class="col-6">
+              <input type="password" class="form-control form-control-sm" id="passw2Input" placeholder="Repetir Passwword">
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-primary btn-sm">Crear</button>
+            </div>
+          </form>
+         </div>
+           </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -32,7 +82,31 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="container">
+          <p> <small>Crear nuevo evento</small> </p>
+          <form action="" class="row">
+            <div class="col-12">
+              <input type="text" class="form-control form-control-sm" id="producInput" placeholder="Nombre del Evento">
+            </div>
+            <div class="col-12">
+              <label for="formFileMultiple" class="form-label">Seleccione imagen max 500kb</label>
+              <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control form-control-sm" id="descrip_eventoInput" rows="3" placeholder="Descripcion del evento"></textarea>
+            </div>
+            <div class="col-6">
+              <input type="date" class="form-control form-control-sm" id="producInput" placeholder="Fecha inicio">
+            </div>
+            <div class="col-6">
+              <input type="date" class="form-control form-control-sm" id="producInput" placeholder="Fecha fin ">
+            </div>
+          
+            <div class="col-6">
+              <button type="button" class="btn btn-primary btn-sm">Crear evento</button>
+            </div>
+          </form>
+         </div>
       </div>
     </div>
   </div>
@@ -40,9 +114,7 @@
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style>
