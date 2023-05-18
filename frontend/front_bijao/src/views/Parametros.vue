@@ -10,7 +10,7 @@
           aria-expanded="true"
           aria-controls="collapseOne"
         >
-        <font-awesome-icon icon="user" /> Productos y precios
+        Productos y precios
         </button>
       </h2>
       <div
@@ -32,7 +32,7 @@
                 aria-controls="home1"
                 aria-selected="true"
               >
-                Activos
+                <IconHome /> Activos
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -60,35 +60,35 @@
               aria-labelledby="home-tab"
               tabindex="0"
             >
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div
               class="tab-pane"
@@ -141,7 +141,7 @@
           aria-expanded="false"
           aria-controls="collapseTwo"
         >
-      Usuarios
+          Usuarios
         </button>
       </h2>
       <div
@@ -190,35 +190,35 @@
               aria-labelledby="home-tab"
               tabindex="0"
             >
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div
               class="tab-pane fade"
@@ -313,9 +313,7 @@
           aria-expanded="false"
           aria-controls="collapseThree"
         >
-      
-     
-         Eventos
+          Eventos
         </button>
       </h2>
       <div
@@ -324,110 +322,140 @@
         data-bs-parent="#accordionExample"
       >
         <div class="accordion-body">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="myTab3" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home3"
+                type="button"
+                role="tab"
+                aria-controls="home3"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile3"
+                type="button"
+                role="tab"
+                aria-controls="profile3"
+                aria-selected="false"
+              >
+                Profile
+              </button>
+            </li>
+          </ul>
 
-<!-- Nav tabs -->
-<ul class="nav nav-tabs" id="myTab3" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home3" type="button" role="tab" aria-controls="home3" aria-selected="true">Home</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile3" type="button" role="tab" aria-controls="profile3" aria-selected="false">Profile</button>
-  </li>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div
+              class="tab-pane active"
+              id="home3"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="profile3"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <div class="container">
+                <p><small>Crear nuevo evento</small></p>
+                <form action="" class="row">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="producInput"
+                      placeholder="Nombre del Evento"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="formFileMultiple" class="form-label"
+                      >Seleccione imagen max 500kb</label
+                    >
+                    <input
+                      class="form-control form-control-sm"
+                      type="file"
+                      id="formFileMultiple"
+                      multiple
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control form-control-sm"
+                      id="descrip_eventoInput"
+                      rows="3"
+                      placeholder="Descripcion del evento"
+                    ></textarea>
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="date"
+                      class="form-control form-control-sm"
+                      id="producInput"
+                      placeholder="Fecha inicio"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="date"
+                      class="form-control form-control-sm"
+                      id="producInput"
+                      placeholder="Fecha fin "
+                    />
+                  </div>
 
-</ul>
-
-<!-- Tab panes -->
-<div class="tab-content">
-  <div class="tab-pane active" id="home3" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table></div>
-  <div class="tab-pane" id="profile3" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-    <div class="container">
-      <p><small>Crear nuevo evento</small></p>
-      <form action="" class="row">
-        <div class="col-12">
-          <input
-            type="text"
-            class="form-control form-control-sm"
-            id="producInput"
-            placeholder="Nombre del Evento"
-          />
-        </div>
-        <div class="col-12">
-          <label for="formFileMultiple" class="form-label"
-            >Seleccione imagen max 500kb</label
-          >
-          <input
-            class="form-control form-control-sm"
-            type="file"
-            id="formFileMultiple"
-            multiple
-          />
-        </div>
-        <div class="col-12">
-          <textarea
-            class="form-control form-control-sm"
-            id="descrip_eventoInput"
-            rows="3"
-            placeholder="Descripcion del evento"
-          ></textarea>
-        </div>
-        <div class="col-6">
-          <input
-            type="date"
-            class="form-control form-control-sm"
-            id="producInput"
-            placeholder="Fecha inicio"
-          />
-        </div>
-        <div class="col-6">
-          <input
-            type="date"
-            class="form-control form-control-sm"
-            id="producInput"
-            placeholder="Fecha fin "
-          />
-        </div>
-
-        <div class="col-6">
-          <button type="button" class="btn btn-primary btn-sm">
-            Guardar
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-</div>
-
-
-      
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Guardar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -435,7 +463,6 @@
 </template>
 
 <script>
-
 
 </script>
 
