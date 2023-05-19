@@ -36,12 +36,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Gestor
+              <v-icon name="ri-home-heart-fill"  animation="pulse"/> Gestor
               </a>
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item app">
-                    <RouterLink to="/pedidos">Pedidos</RouterLink></a
+                    <RouterLink to="/pedidos">  Pedidos</RouterLink></a
                   >
                 </li>
 
@@ -61,7 +61,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Tamalero
+              <v-icon name="ri-home-heart-fill"  animation="pulse"/> Tamalero
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item app"><RouterLink to="/tamalero">Home</RouterLink></a></li>
@@ -81,7 +81,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Administrador
+              <v-icon name="ri-home-heart-fill"  animation="pulse"/> Administrador
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item app"><RouterLink to="/parametros">Parametros</RouterLink></a></li>
@@ -100,14 +100,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Gestion de Contenido
+              <v-icon name="ri-home-heart-fill"  animation="pulse"/> Gestion de Contenido
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item app"><RouterLink to="/contenidos">Editar</RouterLink></a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page">Cerrar sesion</a>
+              <a class="nav-link active" aria-current="page"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Cerrar sesion</a>
             </li>
           </ul>
         </div>

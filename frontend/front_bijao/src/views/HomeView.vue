@@ -39,7 +39,7 @@
                   <tr>
                     <td>Tamales FDS</td>
                     <td>05/05/2023</td>
-                    <td><router-link to="/ordenes">Ordenar</router-link></td>
+                    <td><router-link to="/ordenes"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Ordenar</router-link></td>
                   </tr>
                 </tbody>
               </table>

@@ -19,6 +19,7 @@
     "datatables.net-responsive-bs5": "^2.4.1",
     "datatables.net-vue3": "^2.1.0",
     "jszip": "^3.10.1",
+    "oh-vue-icons": "^1.0.0-rc3",
     "pdfmake": "^0.2.7",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"

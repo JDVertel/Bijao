@@ -18,9 +18,9 @@ import { RouterLink, RouterView } from "vue-router";
       </div> -->
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
-        <RouterLink to="/dashboard">Dashboard</RouterLink>
+        <RouterLink to="/"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Home</RouterLink>
+        <RouterLink to="/login"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Login</RouterLink>
+        <RouterLink to="/dashboard"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Dashboard</RouterLink>
       </nav>
     </div>
   </header>
