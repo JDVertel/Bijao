@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
+
+
+
   <div class="app">
+
     <div class="card">
       <img
         src="@/components/images/portada.png"

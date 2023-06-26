@@ -7,6 +7,9 @@ import '@/assets/bootstrap.bundle.min.js'
 
 // icons
 import { OhVueIcon, addIcons } from "oh-vue-icons";
+
+
+
 import { RiHomeHeartFill } from "oh-vue-icons/icons";
 
 //listado de iconos disponible

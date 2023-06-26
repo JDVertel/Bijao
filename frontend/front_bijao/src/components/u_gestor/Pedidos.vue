@@ -1,6 +1,7 @@
 <template>
   <div class="app">
-    <h5>Gestion de pedidos</h5>
+    <h6 class="display-6">Gestor</h6>
+    <h6>Gestion de Pedidos</h6>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">

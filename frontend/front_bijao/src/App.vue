@@ -1,8 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+/* import { RouterLink, RouterView } from "vue-router"; */
+import menu from "./components/menu/menu.vue"
 </script>
 
 <template>
+  
+
   <header>
     <img
       alt="Vue logo"
@@ -24,8 +27,9 @@ import { RouterLink, RouterView } from "vue-router";
       </nav>
     </div>
   </header>
-
+  <menu/>
   <RouterView />
+  
 </template>
 
 <style scoped>
