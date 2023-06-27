@@ -7,11 +7,7 @@ import '@/assets/bootstrap.bundle.min.js'
 
 // icons
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-
-
-
 import { RiHomeHeartFill } from "oh-vue-icons/icons";
-
 //listado de iconos disponible
 addIcons(RiHomeHeartFill);
 
@@ -21,5 +17,4 @@ addIcons(RiHomeHeartFill);
 const app = createApp(App)
 app.component("v-icon",OhVueIcon);
 app.use(router)
-
 app.mount('#app')

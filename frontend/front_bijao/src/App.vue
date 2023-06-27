@@ -16,9 +16,7 @@ import menu from "./components/menu/menu.vue"
     />
 
     <div class="wrapper">
-      <!--       <div>
-   <h3>Bijao</h3>
-      </div> -->
+    
 
       <nav>
         <RouterLink to="/"><v-icon name="ri-home-heart-fill"  animation="pulse"/>Home</RouterLink>
@@ -27,7 +25,7 @@ import menu from "./components/menu/menu.vue"
       </nav>
     </div>
   </header>
-  <menu/>
+  
   <RouterView />
   
 </template>
@@ -93,5 +91,19 @@ nav a {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+ 
 }
+
+
+
+
+
 </style>
+<!-- 
+  background-image: linear-gradient(to bottom right, #ffffff, #82d8c1);
+  min-height: 100vh;
+  width: 100%;
+  position:absolute;
+  padding-bottom: 3em;
+
+ -->

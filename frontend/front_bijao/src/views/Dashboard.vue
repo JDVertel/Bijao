@@ -2,14 +2,12 @@
   <div>
     <h4>dashboard</h4>
 
-
-
-    <!--  -->
-    <Gestor />
-    <!--  -->
- <!--    <Tamalero /> -->
-    <!--  -->
-   <!--  <Admin /> -->
+  
+    <!--  <Gestor /> -->
+    
+    <Tamalero />
+  
+    <!--  <Admin /> -->
   </div>
 </template>
 
@@ -20,3 +18,4 @@ import Admin from "../components/u_admin/Parametros.vue";
 </script>
 
 <style></style>
+-
