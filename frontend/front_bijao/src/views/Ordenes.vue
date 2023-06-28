@@ -3,15 +3,15 @@
     <div class="app">
       <table class="table caption-top">
         <caption>
-          Listado de disponidad de tamales
+          Confirmación de pedido
         </caption>
         <h6>Evento <strong>Tamales FDS</strong></h6>
         <thead  class="text-center">
           <tr>
-            <th style="width: 20%;" >Tipo</th>
+            <th style="width: 20%;" >Producto</th>
             <th style="width: 20%;">Valor</th>
-            <th style="width: 20%;">Disp</th>
-            <th style="width: 20%;">Compra</th>
+            <th style="width: 20%;">Cant</th>
+            <th style="width: 20%;">Subtotal</th>
           
           </tr>
         </thead>
@@ -21,14 +21,7 @@
             <td>$2500</td>
             <td>50</td>
             <td>
-              <div class="input-group input-group-sm mb-1">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                />
-              </div>
+        
             
             </td>
           </tr>
@@ -37,14 +30,7 @@
             <td>$3000</td>
             <td>12</td>
             <td>
-              <div class="input-group input-group-sm mb-1">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                />
-              </div>
+          
             </td>
       
           </tr>
@@ -53,14 +39,7 @@
             <td>$4500</td>
             <td>12</td>
             <td>
-              <div class="input-group input-group-sm mb-1">
-                <input
-                  type="number"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                />
-              </div>
+          
             </td>
             
           </tr>
@@ -69,7 +48,7 @@
       <div class="row">
         <div class="col-7"> <h6>Total de pedido: $45000 </h6> </div>
         <div class="col-5" style="color:red
-        "><small> <strong>*No incluye costos de envio</strong></small></div>
+        "><small> <strong>*No incluye gastos de envio</strong></small></div>
        
       </div>
      

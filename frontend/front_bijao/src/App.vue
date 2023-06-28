@@ -34,6 +34,8 @@ import menu from "./components/menu/menu.vue"
 header {
   line-height: 0.5;
   max-height: 100vh;
+
+
 }
 
 .logo {

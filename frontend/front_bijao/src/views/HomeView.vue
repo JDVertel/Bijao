@@ -1,9 +1,10 @@
 <script setup>
+import vitrina from "./../components/vitrina/vitrina.vue";
 </script>
 
 <template>
   <div class="app">
-    <div class="card text-center">
+    <div class="card text-center transparente">
       <div class="row">
         <div class="col-12 col-md-6">
           <div
@@ -119,22 +120,22 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-
               <h6>quienes somos</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique
-                dolore veniam aut praesentium pariatur quidem, maxime incidunt voluptas.
-                Recusandae eum fugit commodi libero minima. Aspernatur cumque voluptates
-                adipisci magnam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                similique dolore veniam aut praesentium pariatur quidem, maxime
+                incidunt voluptas. Recusandae eum fugit commodi libero minima.
+                Aspernatur cumque voluptates adipisci magnam!
               </p>
-            
+
               <h6>nuestro equipo</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique sit
-                ab distinctio, accusamus expedita possimus esse illo rem quibusdam eos
-                dolorem dolore sint maxime eligendi iusto sed, quos consectetur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                similique sit ab distinctio, accusamus expedita possimus esse
+                illo rem quibusdam eos dolorem dolore sint maxime eligendi iusto
+                sed, quos consectetur?
               </p>
-            
+
               <router-link to="/">Home</router-link>
             </div>
           </div>
@@ -158,6 +159,7 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
+       
               <div class="container">
                 <h6>Eventos Actuales</h6>
                 <br />
@@ -175,136 +177,48 @@
                         <td>Tamales FDS</td>
                         <td>05/05/2023</td>
                         <td>
-                          <router-link to="/ordenes"
-                            ><v-icon
-                              name="ri-home-heart-fill"
-                              animation="pulse"
-                            />Ordenar</router-link
-                          >
+                         
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6 col-sm-3">
-                      <div class="card mb-3" style="max-width: 540px">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img
-                              src="./../components/images/tamal1.png"
-                              class="img-fluid rounded-start"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Tamal de Carne</h5>
-                              <p class="card-text">
-                                This is a wider card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                              </p>
-                              <p class="card-text">
-                                <small class="text-body-secondary"
-                                  >Last updated 3 mins ago</small
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="col-6 col-sm-3">
-                      <div class="card mb-3" style="max-width: 540px">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img
-                              src="./../components/images/tamal2.png"
-                              class="img-fluid rounded-start"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Tamal de Pollo</h5>
-                              <p class="card-text">
-                                This is a wider card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                              </p>
-                              <p class="card-text">
-                                <small class="text-body-secondary"
-                                  >Last updated 3 mins ago</small
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="col-6 col-sm-3">
-                      <div class="card mb-3" style="max-width: 540px">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img
-                              src="./../components/images/tamal3.png"
-                              class="img-fluid rounded-start"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Tamal Mixto</h5>
-                              <p class="card-text">
-                                This is a wider card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                              </p>
-                              <p class="card-text">
-                                <small class="text-body-secondary"
-                                  >Last updated 3 mins ago</small
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="col-6 col-sm-3">
-                      <div class="card mb-3" style="max-width: 540px">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img
-                              src="./../components/images/tamal4.png"
-                              class="img-fluid rounded-start"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Tamal de Costillitas</h5>
-                              <p class="card-text">
-                                This is a wider card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
-                              </p>
-                              <p class="card-text">
-                                <small class="text-body-secondary"
-                                  >Last updated 3 mins ago</small
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+                       <!--  -->
+              <div class="container">
+                <div class="row">
+                  <vitrina />
                 </div>
+              </div>
+              <!--  -->
+              <hr>
+              <div class="container">
+                <table class="table table-sm table-hover">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Fecha</th>
+                      <th>Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tamales FDS</td>
+                      <td>05/05/2023</td>
+                      <td>
+                        <div class="btn-group btn-group-sm" role="group">   <button type="button" class="btn btn-danger">-</button>   <button type="button" class="btn btn-success">+</button></div>
+                 
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h6>Total $</h6> <router-link to="/ordenes"
+              ><v-icon
+                name="ri-home-heart-fill"
+                animation="pulse"
+              />Ordenar</router-link
+            >
               </div>
             </div>
           </div>
@@ -365,9 +279,6 @@
 </template>
 
 <style>
-.app {
-  font-size: 0.9em;
-}
 .carrusel {
   height: 300px;
 }
@@ -380,9 +291,25 @@
 }
 
 .app {
-  background-image: linear-gradient(to bottom right, #ffffff, #297811);
+  font-size: 0.9em;
   min-height: 100vh;
   width: 100%;
   padding-bottom: 3em;
+}
+
+
+
+.accordion-button {
+  background-color: green !important;
+  padding: 5px !important;
+  font-size: 0.7rem !important;
+  color: aliceblue !important;
+  text-shadow: 1px 1px 1px black;
+}
+div.accordion-body {
+  background-color: #dfebb5 !important;
+}
+table {
+  border-color: #008000 !important ;
 }
 </style>
