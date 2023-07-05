@@ -50,13 +50,7 @@ nav {
   margin-top: 2rem;
 }
 
-/* nav a.router-link-exact-active {
-  color: var(--color-text);
-} */
 
-/* nav a.router-link-exact-active:hover {
-  background-color: transparent;
-} */
 
 nav a {
   display: inline-block;
@@ -101,11 +95,3 @@ nav a {
 
 
 </style>
-<!-- 
-  background-image: linear-gradient(to bottom right, #ffffff, #82d8c1);
-  min-height: 100vh;
-  width: 100%;
-  position:absolute;
-  padding-bottom: 3em;
-
- -->

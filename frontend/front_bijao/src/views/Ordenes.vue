@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="app">
-      <table class="table caption-top">
+  <!--     <table class="table caption-top">
         <caption>
           Confirmación de pedido
         </caption>
@@ -44,7 +44,7 @@
             
           </tr>
         </tbody>
-      </table>
+      </table> -->
       <div class="row">
         <div class="col-7"> <h6>Total de pedido: $45000 </h6> </div>
         <div class="col-5" style="color:red

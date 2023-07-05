@@ -3,11 +3,11 @@
     <h4>dashboard</h4>
 
   
-    <!--  <Gestor /> -->
+     <Gestor />
     
     <Tamalero />
   
-    <!--  <Admin /> -->
+     <Admin />
   </div>
 </template>
 

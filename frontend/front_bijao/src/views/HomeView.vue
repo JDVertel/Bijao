@@ -186,34 +186,12 @@ import vitrina from "./../components/vitrina/vitrina.vue";
 
                        <!--  -->
               <div class="container">
-                <div class="row">
                   <vitrina />
                 </div>
-              </div>
+          
               <!--  -->
               <hr>
-              <div class="container">
-                <table class="table table-sm table-hover">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Fecha</th>
-                      <th>Opciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Tamales FDS</td>
-                      <td>05/05/2023</td>
-                      <td>
-                        <div class="btn-group btn-group-sm" role="group">   <button type="button" class="btn btn-danger">-</button>   <button type="button" class="btn btn-success">+</button></div>
-                 
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <h6>Total $</h6> <router-link to="/ordenes"
+        <router-link to="/ordenes"
               ><v-icon
                 name="ri-home-heart-fill"
                 animation="pulse"
@@ -300,16 +278,17 @@ import vitrina from "./../components/vitrina/vitrina.vue";
 
 
 .accordion-button {
-  background-color: green !important;
+  background-color:#84AD09 !important;
   padding: 5px !important;
   font-size: 0.7rem !important;
   color: aliceblue !important;
   text-shadow: 1px 1px 1px black;
 }
 div.accordion-body {
-  background-color: #dfebb5 !important;
+  background-color: #F3FFC1!important;
+  padding: 6px!important;
 }
 table {
-  border-color: #008000 !important ;
+  border-color:#84AD09 !important ;
 }
 </style>
