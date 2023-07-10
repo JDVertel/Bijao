@@ -88,6 +88,7 @@ import vitrina from "./../components/vitrina/vitrina.vue";
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <br>
         </div>
         <div class="col-12 col-md-6">
           <div class="card-body">

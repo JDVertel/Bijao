@@ -9,11 +9,11 @@
           alt="Vue logo"
           class="logo"
           src="@/components/images/logo_bijao.png"
-          width="125"
+          width="230"
           height="125"
         />
       </div>
-
+<br>
       <!-- Login Form -->
       <form>
         <div class="container">

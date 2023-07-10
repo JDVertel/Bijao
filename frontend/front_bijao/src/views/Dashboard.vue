@@ -18,4 +18,3 @@ import Admin from "../components/u_admin/Parametros.vue";
 </script>
 
 <style></style>
--

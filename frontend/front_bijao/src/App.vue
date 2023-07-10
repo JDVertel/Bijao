@@ -11,7 +11,7 @@ import menu from "./components/menu/menu.vue"
       alt="Vue logo"
       class="logo"
       src="@/components/images/logo_bijao.png"
-      width="125"
+      width="230"
       height="125"
     />
 
@@ -68,10 +68,10 @@ nav a {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
   .logo {
     margin: 0 2rem 0 0;
   }
+
 
   header .wrapper {
     display: flex;
