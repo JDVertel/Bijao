@@ -1,6 +1,15 @@
-<script setup>
-/* import { RouterLink, RouterView } from "vue-router"; */
-import menu from "./components/menu/menu.vue"
+<script>
+import { RouterLink, RouterView } from "vue-router";
+import { defineAsyncComponent } from "vue";
+
+
+
+export default{
+  name:'App',
+  components:{
+    Counter:defineAsyncComponent( ()=> import('./components/carritodecompras/count.vue'))
+  }
+}
 </script>
 
 <template>
@@ -15,6 +24,7 @@ import menu from "./components/menu/menu.vue"
       height="125"
     />
 
+    <Counter/>
     <div class="wrapper">
     
 
