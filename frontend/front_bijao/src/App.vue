@@ -5,10 +5,7 @@ import { defineAsyncComponent } from "vue";
 
 
 export default{
-  name:'App',
-  components:{
-    Counter:defineAsyncComponent( ()=> import('./components/carritodecompras/count.vue'))
-  }
+
 }
 </script>
 
@@ -24,7 +21,7 @@ export default{
       height="125"
     />
 
-    <Counter/>
+ 
     <div class="wrapper">
     
 
@@ -35,9 +32,9 @@ export default{
       </nav>
     </div>
   </header>
-  
+ 
   <RouterView />
-  
+
 </template>
 
 <style scoped>

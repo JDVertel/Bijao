@@ -41,56 +41,53 @@
         </div>
       </div>
     </div>
+
+    <CarritodeCompras/>
+    
     <!-- fin container -->
   </div>
 </template>
 
 <script>
-import Cart from "./../carritodecompras/carrito.vue";
+import store from "../../store";
+import { defineAsyncComponent } from "vue";
 export default {
-  props: {
-    products: {
-      type: Array,
-      required: true,
-    },
+  components:{
+    CarritodeCompras:defineAsyncComponent( ()=> import('./../carritodecompras/carrito.vue'))
   },
+
   data() {
     return {
       productos: [
         {
           nombre: "Tamal de carne",
-          precio: "2500",
+          precio: 2500,
           imglink: "tamal1.png",
         },
         {
           nombre: "Tamal de pollo",
-          precio: "2600",
+          precio: 2600,
           imglink: "tamal2.png",
         },
         {
           nombre: "Tamal Mixto",
-          precio: "3000",
+          precio: 3000,
           imglink: "tamal3.png",
         },
         {
           nombre: "Tamal de costillitas",
-          precio: "3500",
+          precio: 3500,
           imglink: "tamal4.png",
         },
       ],
-      cartItems: [],
     };
   },
   methods: {
     addItem(product) {
-      this.$emit("add", product);
-    },
-    /*  */
-    addToCart(product) {
-      this.cartItems.push(product);
-    },
-    removeFromCart(index) {
-      this.cartItems.splice(index, 1);
+     
+      this.$store.state.item = product;
+
+      this.$store.dispatch("addItemAction");
     },
   },
 };

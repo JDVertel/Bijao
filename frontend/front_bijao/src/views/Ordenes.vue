@@ -1,50 +1,7 @@
 <template>
   <div class="container">
     <div class="app">
-  <!--     <table class="table caption-top">
-        <caption>
-          Confirmación de pedido
-        </caption>
-        <h6>Evento <strong>Tamales FDS</strong></h6>
-        <thead  class="text-center">
-          <tr>
-            <th style="width: 20%;" >Producto</th>
-            <th style="width: 20%;">Valor</th>
-            <th style="width: 20%;">Cant</th>
-            <th style="width: 20%;">Subtotal</th>
-          
-          </tr>
-        </thead>
-        <tbody class="text-center">
-          <tr>
-            <td >Tamal de carne</td>
-            <td>$2500</td>
-            <td>50</td>
-            <td>
-        
-            
-            </td>
-          </tr>
-          <tr>
-            <td>Tamal mixto</td>
-            <td>$3000</td>
-            <td>12</td>
-            <td>
-          
-            </td>
-      
-          </tr>
-          <tr>
-            <td>Tamal de pescado</td>
-            <td>$4500</td>
-            <td>12</td>
-            <td>
-          
-            </td>
-            
-          </tr>
-        </tbody>
-      </table> -->
+      <CarritodeCompras/>
       <div class="row">
         <div class="col-7"> <h6>Total de pedido: $45000 </h6> </div>
         <div class="col-5" style="color:red
@@ -114,6 +71,17 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { defineAsyncComponent } from "vue";
+
+
+
+export default{
+  name:'App',
+  components:{
+    CarritodeCompras:defineAsyncComponent( ()=> import('./../components/carritodecompras/carrito.vue'))
+  }
+}
+</script>
 
 <style></style>
