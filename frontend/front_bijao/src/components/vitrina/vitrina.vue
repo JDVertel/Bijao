@@ -84,16 +84,16 @@ export default {
   },
   methods: {
     addItem(product) {
-     
       this.$store.state.item = product;
-
-      this.$store.dispatch("addItemAction");
+      this.$store.dispatch("addItemAction");  
+      this.$store.state.item = '';
+    
     },
   },
 };
 </script>
 
-<style>
+<style scoped>
 .transparente {
   padding: 5px;
   font-size: 0.7rem;

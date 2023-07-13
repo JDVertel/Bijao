@@ -2,23 +2,27 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    carrito: [{ nombre: 'prueba1', precio:12000 }],
+    carrito: [],
     item: [],
-    sumatoria:'',
+    subtotal:[],
+    total:'',
   },
   mutations: {
-    addItem(state, item) {
+    addItem(state, item) 
+    {
       state.carrito = [state.item, ...state.carrito];
+      state.subtotal= [state.item.precio, ...state.subtotal];
+      state.total= state.subtotal.reduce((acc,el)=> acc+el,0)
     },
+ 
   },
 
 actions:{
-    addItemAction (context){
-        context.commit('addItem');
-        this.sumatoria= state.item.precio+sumatoria
-    }
+    addItemAction (item){
+        item.commit('addItem');   
+    },
+ 
 }
-
 });
 
 
